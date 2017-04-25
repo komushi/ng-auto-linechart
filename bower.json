@@ -1,0 +1,15 @@
+{
+  "name": "ng-stomp-sockjs-app",
+  "version": "1.0.0",
+  "description": "angular stomp sockjs app",
+  "homepage": "http://komushi.github.io/ng-stomp-sockjs-app/",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "angular": "1.6.4",
+    "angular-route": "1.6.4",
+    "bootstrap": "^3.3.7",
+    "angular-nvd3": "^1.0.9",
+    "ng-awsmqtt": "^0.1.2"
+  }
+}

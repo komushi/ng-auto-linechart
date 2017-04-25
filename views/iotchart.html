@@ -1,0 +1,33 @@
+<h2>Smart Table</h2>
+
+<div class="container-fluid" ng-controller="iotchartController">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="form-group">
+            <label for="endpoint">Endpoint URL:</label>
+            <input type="text" class="form-control" id="endpoint" placeholder="endpointid.iot.region.amazonaws.com" ng-model="awsMqtt.endpoint">
+            <label for="accessKeyId">accessKeyId:</label>
+            <input type="text" class="form-control" id="accessKeyId" placeholder='AccessKeyId' ng-model="awsMqtt.accessKeyId">
+            <label for="secretAccessKey">secretAccessKey:</label>
+            <input type="password" class="form-control" id="secretAccessKey" placeholder='SecretAccessKey' ng-model="awsMqtt.secretAccessKey">
+            <label for="topic">Topic</label>
+            <input type="text" class="form-control" id="topic" placeholder='/topic' ng-model="awsMqtt.topic">
+          </div>
+          <div class="form-group">
+            <button ng-click="start()">Start</button>
+            <button ng-click="stop()">Stop</button>
+          </div>
+        </div>      
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <nvd3 options="options" data="data"></nvd3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

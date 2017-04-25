@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<base href="/"></base>
+	<head>
+	  	<title>Angular nvD3 Auto Refresh Line Chart Demo</title>
+	    
+		<!-- <base href="/"> -->
+
+		<meta charset="utf-8">  <!-- it's important for d3.js -->
+
+		<link rel="stylesheet" href="bower_components/nvd3/build/nv.d3.css">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+	</head>
+
+
+	<body ng-app="ngAutoLinechartApp">
+
+		<div class="container">
+			<ol class="breadcrumb">
+			  <li><a href="#!/chart">Auto Refresh with Dummy Data</a></li>
+			  <li><a href="#!/iotchart">Auto Refresh with AWS IoT Data</a></li>
+			</ol>
+			<ng-view></ng-view>
+		</div>
+
+		
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-route/angular-route.js"></script>
+		<script src="bower_components/d3/d3.js"></script>
+		<script src="bower_components/nvd3/build/nv.d3.js"></script> <!-- or use another assembly -->
+		<script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+		<script src="bower_components/aws-mqtt-browser/lib/aws-mqtt-browser.js"></script>
+		<script src="bower_components/ng-awsmqtt/dist/ng-awsmqtt.min.js"></script>
+		<!-- app related -->
+		<script src="js/app.js"></script>
+		<script src="js/controllers/chartController.js"></script>
+		<script src="js/controllers/iotchartController.js"></script>
+
+		
+	</body>
+</html>
