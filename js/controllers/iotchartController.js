@@ -50,7 +50,7 @@ app.controller('iotchartController', ['$scope', '$mqtt', '$timeout', '$q', funct
         sendMessage()
             .then(function(sentOn) {
 
-                var delayed = sentOn - receivedOn - 1000;
+                var delayed = sentOn - receivedOn - 500;
 
                 console.log(JSON.stringify($scope.data[0].values));
 
@@ -75,7 +75,7 @@ app.controller('iotchartController', ['$scope', '$mqtt', '$timeout', '$q', funct
                     dfd.resolve(sentOn)
                 });
 
-        }, 1000);
+        }, 500);
 
         return dfd.promise;
     };
@@ -105,7 +105,7 @@ app.controller('iotchartController', ['$scope', '$mqtt', '$timeout', '$q', funct
                 x: function(d){ return d.x; },
                 y: function(d){ return d.y; },
                 useInteractiveGuideline: true,
-                duration: 500,    
+                duration: 200,    
                 xAxis: {
                     tickFormat: function(d){
                    		return d3.time.format('%M:%S')(new Date(d));

@@ -3,8 +3,10 @@
 
 ----
 
-## 1. Install Dependencies
+## 1. Download and install Dependencies
 ```bash
+$ git clone https://github.com/komushi/ng-auto-linechart.git
+$ cd ng-auto-linechart
 $ bower install
 ```
 
