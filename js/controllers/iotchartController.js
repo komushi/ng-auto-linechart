@@ -122,7 +122,7 @@ app.controller('iotchartController', ['$scope', '$mqtt', '$timeout', '$q', funct
 
     initialize();
 
-
+    console.log('iot-chart');
 
 }]);
 

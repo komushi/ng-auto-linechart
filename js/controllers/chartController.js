@@ -53,6 +53,8 @@ app.controller('chartController', ['$scope', function($scope){
 
     initialize();
 
+    console.log('chart');
+
 
 
 }]);
